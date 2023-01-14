@@ -20,9 +20,9 @@ static int	ft_put_hex(unsigned int num, const char format)
 	if (num >= 16)
 	{
 		count += ft_put_hex(num / 16, format);
-		count += ft_put_hex(num % 16, format);
 	}
-	else
+	num = num % 16;
+	if (num < 16)
 	{
 		if (num <= 9)
 			count += ft_putchar((num + '0'));
