@@ -38,12 +38,12 @@ int	ft_putnbr(int n)
 	nb = n;
 	if (nb == INT_MIN)
 	{
-		write(1, "-2", 2);
+		ft_putstr("-2");
 		nb = 147483648;
 	}
 	if (nb < 0)
 	{
-		write(1, &"-", 1);
+		ft_putchar('-');
 		ft_putnbr(nb * -1);
 	}
 	else if (nb > 9)
@@ -54,7 +54,7 @@ int	ft_putnbr(int n)
 	else
 	{
 		i = nb + 48;
-		write(1, &i, 1);
+		ft_putchar(i);
 	}
 	return (ft_lennbr(n));
 }

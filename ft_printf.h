@@ -24,7 +24,7 @@ int		ft_puthex(unsigned int num, const char format);
 int		ft_putpointer(unsigned long long p);
 int		ft_putstr(char *str);
 int		ft_putchar(char c);
-int		ft_putnbr(int nb);
+int		ft_putnbr(int n);
 size_t	ft_strlen(const char *str);
 
 #endif
